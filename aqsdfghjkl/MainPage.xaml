@@ -47,12 +47,13 @@
                 HeightRequest="75"
                 />-->
             
+         
 
             <Rectangle
                 WidthRequest="200"
                 HeightRequest="200"
                 x:Name="Rect"
-                Stroke="white"/>
+                Stroke="white" />
 
             <Label
                 x:Name="RGBLBL"
@@ -68,18 +69,27 @@
                 x:Name="Red"
                 Minimum="0" 
                 Maximum="255"
-                ValueChanged="Red_ValueChanged"/>
+                ValueChanged="Red_ValueChanged"
+                ThumbColor="Red"
+                MinimumTrackColor="Red"
+                MaximumTrackColor="Grey"/>
             <Slider
                 x:Name="Green"
                 Minimum="0" 
                 Maximum="255"
                 ValueChanged="Green_ValueChanged"
-                />
+                ThumbColor="Green"
+                MinimumTrackColor="Green"
+                MaximumTrackColor="Grey"/>
+                
             <Slider
                 x:Name="Blue"
                 Minimum="0" 
                 Maximum="255"
                 ValueChanged="Blue_ValueChanged"
+                ThumbColor="Blue"
+                MinimumTrackColor="Blue"
+                MaximumTrackColor="Grey"
                 />
             <Button
                 WidthRequest="200"

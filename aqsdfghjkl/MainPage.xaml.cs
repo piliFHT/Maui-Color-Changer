@@ -1,7 +1,4 @@
-﻿using Microsoft.Maui.Controls;
-using Windows.Media.Devices;
-
-namespace aqsdfghjkl;
+﻿namespace aqsdfghjkl;
 
 public partial class MainPage : ContentPage
 {
@@ -46,8 +43,11 @@ public partial class MainPage : ContentPage
 
     private void BTN_Clicked(object sender, EventArgs e)
     {
-        BTN.BackgroundColor = Color.FromRgb(Convert.ToByte(Red.Value),
-        Convert.ToByte(Green.Value), Convert.ToByte(Blue.Value));
+        int RedInt = Convert.ToInt32(Red.Value);
+        int GreenInt = Convert.ToInt32(Green.Value);
+        int BlueInt = Convert.ToInt32(Blue.Value);
+
+        BTN.TextColor = Color.FromRgb(RedInt, GreenInt, BlueInt);
     }
 
 
