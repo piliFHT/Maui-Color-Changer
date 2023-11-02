@@ -7,7 +7,8 @@
         <VerticalStackLayout
             Spacing="25"
             Padding="30,0"
-            VerticalOptions="Center">
+            VerticalOptions="Center"
+            x:Name="VSL">
 
 
             <!--<Entry Placeholder="Napiš svoje jméno"
@@ -45,34 +46,47 @@
                 WidthRequest="150"
                 HeightRequest="75"
                 />-->
+            
 
             <Rectangle
                 WidthRequest="200"
                 HeightRequest="200"
-                x:Name="Rect"/>
+                x:Name="Rect"
+                Stroke="white"/>
 
             <Label
-                Text="Ahoj"
+                x:Name="RGBLBL"
+                Text="#000"
+                HorizontalTextAlignment="Center"/>
+            <Label
+                Text="0, 0, 0"
                 x:Name="LBL"
                 HorizontalTextAlignment="Center"/>
+
+
             <Slider
                 x:Name="Red"
                 Minimum="0" 
                 Maximum="255"
-                ValueChanged="Slider_ValueChanged"/>
+                ValueChanged="Red_ValueChanged"/>
             <Slider
                 x:Name="Green"
                 Minimum="0" 
                 Maximum="255"
-                ValueChanged="Slider_ValueChanged_1"
+                ValueChanged="Green_ValueChanged"
                 />
             <Slider
                 x:Name="Blue"
                 Minimum="0" 
                 Maximum="255"
-                ValueChanged="Slider_ValueChanged_2"
+                ValueChanged="Blue_ValueChanged"
                 />
-            
+            <Button
+                WidthRequest="200"
+                HeightRequest="100"
+                x:Name="BTN"
+                Text="Změn barvu!"
+                Clicked="BTN_Clicked"/>
 
 
 

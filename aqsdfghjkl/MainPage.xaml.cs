@@ -1,4 +1,7 @@
-﻿namespace aqsdfghjkl;
+﻿using Microsoft.Maui.Controls;
+using Windows.Media.Devices;
+
+namespace aqsdfghjkl;
 
 public partial class MainPage : ContentPage
 {
@@ -9,25 +12,42 @@ public partial class MainPage : ContentPage
         InitializeComponent();
     }
 
-    private void Slider_ValueChanged(object sender, ValueChangedEventArgs e)
-    {
-        UpdateColor();
-    }
+    
 
-    private void Slider_ValueChanged_1(object sender, ValueChangedEventArgs e)
-    {
-        UpdateColor();
-    }
-
-    private void Slider_ValueChanged_2(object sender, ValueChangedEventArgs e)
-    {
-        UpdateColor();
-    }
+    
     public void UpdateColor()
     {
-        Color clr = Color.FromHsv(Convert.ToByte(Red.Value),
+        string RedHex = Convert.ToInt32(Red.Value).ToString("X");
+        string GreenHex = Convert.ToInt32(Green.Value).ToString("X");
+        string BlueHex = Convert.ToInt32(Blue.Value).ToString("X");
+
+
+        Color clr = Color.FromRgb(Convert.ToByte(Red.Value),
         Convert.ToByte(Green.Value), Convert.ToByte(Blue.Value));
         Rect.Fill = new SolidColorBrush(clr);
+        RGBLBL.Text = $"#{RedHex}{GreenHex}{BlueHex}";
+        LBL.Text = $"{Convert.ToInt32(Red.Value)}, {Convert.ToInt32(Green.Value)}, {Convert.ToInt32(Blue.Value)}";
+    }
+
+    private void Blue_ValueChanged(object sender, ValueChangedEventArgs e)
+    {
+        UpdateColor();
+    }
+
+    private void Green_ValueChanged(object sender, ValueChangedEventArgs e)
+    {
+        UpdateColor();
+    }
+
+    private void Red_ValueChanged(object sender, ValueChangedEventArgs e)
+    {
+        UpdateColor();
+    }
+
+    private void BTN_Clicked(object sender, EventArgs e)
+    {
+        BTN.BackgroundColor = Color.FromRgb(Convert.ToByte(Red.Value),
+        Convert.ToByte(Green.Value), Convert.ToByte(Blue.Value));
     }
 
 
