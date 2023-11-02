@@ -46,8 +46,22 @@ public partial class MainPage : ContentPage
 
     private void BTN_Clicked(object sender, EventArgs e)
     {
-        BTN.BackgroundColor = Color.FromRgb(Convert.ToByte(Red.Value),
+        int RedInt = Convert.ToInt32(Red.Value);
+        int GreenInt = Convert.ToInt32(Green.Value);
+        int BlueInt = Convert.ToInt32(Blue.Value);
+
+
+
+        LBL.TextColor = Color.FromRgb(Convert.ToByte(Red.Value),
         Convert.ToByte(Green.Value), Convert.ToByte(Blue.Value));
+        if(RedInt + GreenInt + BlueInt >= 381)
+        {
+            LBL.BackgroundColor = Color.FromRgb(0, 0, 0);
+        }
+        else
+        {
+            LBL.BackgroundColor = Color.FromRgb(255, 255,255);
+        }
     }
 
 

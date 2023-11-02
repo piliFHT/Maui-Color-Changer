@@ -47,12 +47,13 @@
                 HeightRequest="75"
                 />-->
             
+         
 
             <Rectangle
                 WidthRequest="200"
                 HeightRequest="200"
                 x:Name="Rect"
-                Stroke="white"/>
+                Stroke="white" />
 
             <Label
                 x:Name="RGBLBL"
