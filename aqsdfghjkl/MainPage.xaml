@@ -95,6 +95,7 @@
                 WidthRequest="200"
                 HeightRequest="100"
                 x:Name="BTN"
+                TextColor="Grey"
                 Text="Změn barvu!"
                 Clicked="BTN_Clicked"/>
 

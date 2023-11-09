@@ -47,7 +47,7 @@ public partial class MainPage : ContentPage
         int GreenInt = Convert.ToInt32(Green.Value);
         int BlueInt = Convert.ToInt32(Blue.Value);
 
-        BTN.TextColor = Color.FromRgb(RedInt, GreenInt, BlueInt);
+        BTN.BackgroundColor = Color.FromRgb(RedInt, GreenInt, BlueInt);
     }
 
 
