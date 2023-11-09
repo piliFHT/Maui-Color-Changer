@@ -9,52 +9,11 @@
             Padding="30,0"
             VerticalOptions="Center"
             x:Name="VSL">
-
-
-            <!--<Entry Placeholder="Napiš svoje jméno"
-                   WidthRequest="200"
-                   TextChanged="Entry_TextChanged"
-                   MaxLength="20" 
-                   x:Name="MyEntry"
-                  />
-
-            <Label x:Name="LBL" Text="" HorizontalTextAlignment="Center"/>
-            
-            
-            <Button Text="Klik"
-                  WidthRequest="200"
-                  HeightRequest="100"
-                  BackgroundColor="Goldenrod"
-                  Clicked="Button_Clicked"/>
-
-
-            <ActivityIndicator x:Name="AI"
-                               IsRunning="True"
-                              />-->
-
-            <!--<ProgressBar
-                x:Name="PB"
-                BackgroundColor="Black"
-                Progress="0"
-                ProgressColor="Red"
-                WidthRequest="800"
-                />
-            <Button
-                x:Name="Button"
-                Text="Start"
-                Clicked="Button_Clicked"
-                WidthRequest="150"
-                HeightRequest="75"
-                />-->
-            
-         
-
             <Rectangle
                 WidthRequest="200"
                 HeightRequest="200"
                 x:Name="Rect"
                 Stroke="white" />
-
             <Label
                 x:Name="RGBLBL"
                 Text="#000"
@@ -63,8 +22,6 @@
                 Text="0, 0, 0"
                 x:Name="LBL"
                 HorizontalTextAlignment="Center"/>
-
-
             <Slider
                 x:Name="Red"
                 Minimum="0" 
@@ -81,7 +38,6 @@
                 ThumbColor="Green"
                 MinimumTrackColor="Green"
                 MaximumTrackColor="Grey"/>
-                
             <Slider
                 x:Name="Blue"
                 Minimum="0" 
@@ -98,9 +54,6 @@
                 TextColor="Grey"
                 Text="Změn barvu!"
                 Clicked="BTN_Clicked"/>
-
-
-
         </VerticalStackLayout>
     </ScrollView>
 
