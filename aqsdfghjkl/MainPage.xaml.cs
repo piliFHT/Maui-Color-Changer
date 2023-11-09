@@ -31,16 +31,6 @@ public partial class MainPage : ContentPage
         UpdateColor();
     }
 
-    private void Green_ValueChanged(object sender, ValueChangedEventArgs e)
-    {
-        UpdateColor();
-    }
-
-    private void Red_ValueChanged(object sender, ValueChangedEventArgs e)
-    {
-        UpdateColor();
-    }
-
     private void BTN_Clicked(object sender, EventArgs e)
     {
         int RedInt = Convert.ToInt32(Red.Value);
@@ -49,6 +39,7 @@ public partial class MainPage : ContentPage
 
         BTN.BackgroundColor = Color.FromRgb(RedInt, GreenInt, BlueInt);
     }
+
 
 
 

@@ -26,7 +26,7 @@
                 x:Name="Red"
                 Minimum="0" 
                 Maximum="255"
-                ValueChanged="Red_ValueChanged"
+                ValueChanged="Blue_ValueChanged"
                 ThumbColor="Red"
                 MinimumTrackColor="Red"
                 MaximumTrackColor="Grey"/>
@@ -34,7 +34,7 @@
                 x:Name="Green"
                 Minimum="0" 
                 Maximum="255"
-                ValueChanged="Green_ValueChanged"
+                ValueChanged="Blue_ValueChanged"
                 ThumbColor="Green"
                 MinimumTrackColor="Green"
                 MaximumTrackColor="Grey"/>
@@ -52,7 +52,7 @@
                 HeightRequest="100"
                 x:Name="BTN"
                 TextColor="Grey"
-                Text="Změn barvu!"
+                BorderColor="White"
                 Clicked="BTN_Clicked"/>
         </VerticalStackLayout>
     </ScrollView>
